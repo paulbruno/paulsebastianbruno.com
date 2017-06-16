@@ -17,6 +17,7 @@
     "ejs": "^2.5.6",
     "express": "^4.14.1",
     "express-graphql": "^0.6.6",
+    "graphql": "^0.10.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.6.1"
