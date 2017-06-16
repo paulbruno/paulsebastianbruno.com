@@ -1,0 +1,77 @@
+body {
+  /* dimensions, padding/margin-ing */
+  padding: 0;
+  margin: 0;
+  /* text-styling */
+  font-family: sans-serif;
+  color: #1c1c1c;
+}
+
+/* styles to be applied when the "Usual" font is loaded from Adobe TypeKit */
+.wf-active body {
+  /* text-styling */
+  font-family: "usual", sans-serif;
+}
+
+header {
+  /* dimensions, padding/margin-ing */
+  width: 300px;
+  /* text-styling */
+  word-spacing: 300px;
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+.header-section-highlight {
+  background: #1c1c1c;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  margin: 2px 0 0;
+}
+
+nav ul li * { /* for background */
+  padding: 1px;
+  background-color: #1c1c1c;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li *:hover {
+  background-color: white;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+nav#section {
+  position: absolute;
+  top: 0;
+  left: 310px;
+}
+nav#section ul {
+  margin-top: 0px;
+}
+nav#section ul li {
+  display: inline-block;
+  font-size: 1.8em;
+  margin: 0 0 0 20px;
+}
+nav#section ul li:first-child {
+  margin-left: 0;
+}
+nav#section ul li * { /* for background */
+  background-color: #c0c0c0;
+  color: #2c2c2c;
+}
+
+nav#section ul li *:hover {
+  background-color: #2c2c2c;
+  color: #c0c0c0;
+}

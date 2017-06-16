@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% site.section = "develop" %>
+  <% include ../partials/header.ejs %>
+</head>
+
+<%# TODOS:
+* Fix FOIT in desktop Safari (still discernably happens there, though does not in Chrome, Firefox, et. al.; might also happen with iOS Safari, but it is hard to tell)
+* 
+%>
+<body>
+
+  <% include ../partials/masthead.ejs %>
+
+  <% include ../partials/nav.ejs %>
+
+  <% include ../partials/develop/nav.ejs %>
+
+</body>
+</html>

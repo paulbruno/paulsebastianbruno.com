@@ -1,0 +1,5 @@
+{
+  "name": "paulsebastianbruno.com",
+  "description": "An implementation of paulsebastianbruno.com with Node.js using Express 4",
+  "keywords": ["node", "express", "heroku"],
+}
