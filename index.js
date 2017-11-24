@@ -32,7 +32,7 @@ app.locals = {
   }
 };
 
-app.use(vhost("code.localhost", require("./code/server.js").app));
+app.use(vhost("code." + process.env.HOST, require("./code/server.js").app));
 
 app.get('/*', function(request, response) {
   debugger;
