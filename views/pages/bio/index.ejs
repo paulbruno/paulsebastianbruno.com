@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% site.section = "develop" %>
-  <% include ../partials/header.ejs %>
+  <% site.section = 'bio';
+     site.page = ''; %>
+  <% include /partials/header.ejs %>
 </head>
 
 <%# TODOS:
@@ -11,11 +12,10 @@
 %>
 <body>
 
-  <% include ../partials/masthead.ejs %>
+  <% include /partials/masthead.ejs %>
 
-  <% include ../partials/nav.ejs %>
-
-  <% include ../partials/develop/nav.ejs %>
+  <% include /partials/nav.ejs %>
+ 
 
 </body>
 </html>

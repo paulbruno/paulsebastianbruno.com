@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../partials/header.ejs %>
+  <% site.section = 'web';
+     site.page    = 'resume'; %>
+  <% include /partials/header.ejs %>
 </head>
 
 <%# TODOS:
@@ -10,10 +12,11 @@
 %>
 <body>
 
-  <% include ../partials/masthead.ejs %>
+  <% include /partials/masthead.ejs %>
 
-  <% include ../partials/nav.ejs %>
- 
+  <% include /partials/nav.ejs %>
+
+  Resume content.
 
 </body>
 </html>

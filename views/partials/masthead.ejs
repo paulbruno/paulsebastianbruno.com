@@ -1,9 +1,25 @@
 <header>
-<% if (site.section) { %>
-<span class="header-section-highlight"><%= site.section %>.</span>
-<% } %>
-Paul
-Sebastian
-Bruno
-.com
+  <h1>
+    <a href="/">
+      <% if (site.subdomain) { %>
+        <mark class="subdomain"><%= site.subdomain.charAt(0).toUpperCase() + site.subdomain.slice(1).toLowerCase() %>.</mark>
+      <% } %>
+      Paul
+      Sebastian
+      Bruno
+      <mark class="tld">.com</mark>
+    </a>
+  </h1>
+  <% if (site.breadcrumb) { %>
+    <%
+    if (!Array.isArray(site.breadcrumb)) {
+     site.breadcrumb = [site.breadcrumb];
+    }
+    site.breadcrumb.forEach(function(item, i, breadcrumb) {
+      %>
+      / <span class="header-breadcrumb-highlight"><%= item %></span>
+      <%
+    });
+    %>
+  <% } %>
 </header>
