@@ -25,7 +25,7 @@ app.locals = {
 
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/*', function(req, res, next) {
   console.log('Node vhosted app is running on subdomain code');
   res.render('pages/index');
 });
