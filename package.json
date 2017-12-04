@@ -1,13 +1,13 @@
 {
   "name": "paulsebastianbruno.com",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "paulsebastianbruno.com - using Node.js, Express 4 (framework), ejs (backend templating)",
   "engines": {
     "node": "6.11.4"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "ejs": "^2.5.6",
