@@ -1,0 +1,36 @@
+/* Color Inversion */
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+header h1 .subdomain {
+  color: #777777;
+}
+
+header h1 .tld {
+  color: #777777;
+}
+
+.header-breadcrumb-highlight {
+  background-color: white;
+  color: #1c1c1c;
+}
+
+nav ul li * { /* for background */
+  color: #777;
+}
+
+nav ul li *:hover {
+  color: white;
+}
+
+nav ul li.active * {
+  background-color: white;
+  color: #1c1c1c;
+}

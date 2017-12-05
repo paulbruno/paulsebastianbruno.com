@@ -46,7 +46,7 @@ header h1 .tld {
 }
 
 .header-breadcrumb-highlight {
-  background: #1c1c1c;
+  background-color: #1c1c1c;
   color: white;
 }
 
@@ -81,8 +81,8 @@ nav ul li *:hover {
 }
 
 nav ul li.active * {
-  color: white;
   background-color: #1c1c1c;
+  color: white;
 }
 
 nav ul.active > :not(li.active) {

@@ -1,6 +1,10 @@
 <title><%= site.subdomain && site.subdomain.toUpperCase() + "." %>PAULSEBASTIANBRUNO.COM</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+<% if (site.subdomain) { %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/<%= site.subdomain.toLowerCase() %>.css" />
+<% } %>
+
 <!-- Adobe TypeKit async load script (for both JS and CSS) -->
 <script>
   (function(d) {
