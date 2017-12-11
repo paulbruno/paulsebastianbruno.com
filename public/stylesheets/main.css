@@ -118,3 +118,27 @@ nav#section ul li *:hover {
   background-color: white;
   color: #1c1c1c;
 }
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer li img {
+  vertical-align: middle;
+}
+
+footer li::before {
+  content: "|";
+  margin: 0 .75em;
+  vertical-align: middle;
+}
+footer li:first-child::before {
+  content: "";
+  margin: 0;
+}
