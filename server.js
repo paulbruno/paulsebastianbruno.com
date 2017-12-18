@@ -1,9 +1,9 @@
-var fs = require('fs');
 var express = require('express');
 var app = express();
 var vhost = require('vhost');
 var ejs = require('ejs');
 var path = require('path');
+var { getView } = require('./helpers.js');
 
 var MongoClient = require('mongodb').MongoClient
   , assert = require('assert');
@@ -36,7 +36,7 @@ app.locals = {
 app.use(vhost("code." + process.env.HOST, require("./code/server.js").app));
 
 app.get('/*', function(request, response) {
-  response.render(path.join('pages', getView(path.join(app.get('views'), 'pages'), request.originalUrl) || '404'), {
+  response.render(path.join('pages', getView(path.join(app.get('views'), 'pages'), request.originalUrl, app.get('view engine')) || '404'), {
     // default vars, with default settings, to prevent "esc is not a function" errors
     section: '',
     page:    '',
@@ -47,13 +47,3 @@ app.get('/*', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-function getView(baseFilePath, urlPath) {
-  if (fs.existsSync(path.join(baseFilePath, urlPath + '.' + app.get('view engine')))) {
-    return urlPath;
-  } else if (fs.existsSync(path.join(baseFilePath, urlPath, 'index.' + app.get('view engine')))) {
-    return path.join(urlPath, 'index');
-  } else {
-    return false;
-  }
-}
