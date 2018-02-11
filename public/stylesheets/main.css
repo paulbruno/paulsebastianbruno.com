@@ -85,11 +85,11 @@ nav ul li.active * {
   color: white;
 }
 
-nav ul.active > :not(li.active) {
+nav ul.active > :not(.active) {
   display: none;
 }
 
-nav ul.active:hover > :not(li.active) {
+nav ul.active:hover > :not(.active) {
   display: inline-block;
 }
 
@@ -141,4 +141,9 @@ footer li::before {
 footer li:first-child::before {
   content: "";
   margin: 0;
+}
+
+main {
+  max-width: 400px;
+  line-height: 1.75em;
 }
