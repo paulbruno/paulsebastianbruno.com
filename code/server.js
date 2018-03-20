@@ -32,7 +32,7 @@ router.get('/*', function(request, response, next) {
     // default vars, with default settings, to prevent "esc is not a function" errors
     section: '',
     page:    '',
-    root:    __dirname + "/views/"
+    root:    path.join(__dirname, 'views')
   });
 });
 

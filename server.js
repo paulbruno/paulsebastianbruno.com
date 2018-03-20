@@ -10,14 +10,14 @@ var MongoClient = require('mongodb').MongoClient
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // views is directory for all template files
 app.set('views', path.join(__dirname, 'views'));
 // customize ejs set-up, for 'root' setting, etc.
 const ejsOptions = {
   cache: app.get('view cache'),
-  root: __dirname + '/views'
+  root: path.join(__dirname, 'views')
 };
 app.engine('ejs', (path, data, cb) => {
   ejs.renderFile(path, data, ejsOptions, cb);
@@ -40,7 +40,7 @@ app.get('/*', function(request, response) {
     // default vars, with default settings, to prevent "esc is not a function" errors
     section: '',
     page:    '',
-    root:    __dirname + "/views/"
+    root:    path.join(__dirname + 'views')
   });
 });
 
