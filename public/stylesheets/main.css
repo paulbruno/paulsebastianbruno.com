@@ -121,6 +121,8 @@ nav#section ul li *:hover {
 
 footer {
   position: fixed;
+  box-sizing: border-box;
+  width: 100%;
   bottom: 0;
   left: 0;
   padding: .75em;
@@ -149,6 +151,12 @@ footer li::before {
 footer li:first-child::before {
   content: "";
   margin: 0;
+}
+
+footer small {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 main {
