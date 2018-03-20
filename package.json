@@ -3,7 +3,7 @@
   "version": "0.2.10",
   "description": "paulsebastianbruno.com - using Node.js, Express 4 (framework), ejs (backend templating)",
   "engines": {
-    "node": "6.11.4"
+    "node": "8.9.0"
   },
   "main": "server.js",
   "scripts": {
