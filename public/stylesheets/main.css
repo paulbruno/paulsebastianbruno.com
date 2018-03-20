@@ -119,9 +119,17 @@ nav#section ul li *:hover {
   color: #1c1c1c;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: .75em;
+}
+
 footer ul {
   display: flex;
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -144,6 +152,15 @@ footer li:first-child::before {
 }
 
 main {
-  max-width: 400px;
+  max-width: 39em;
   line-height: 1.75em;
+  margin-top: 2em;
+  padding-left: 8rem;
+  padding-bottom: .25em;
+  font-size: 1.35rem;
+}
+
+main span {
+  border-bottom: 1px dotted white;
+  padding-bottom: .3em;
 }
