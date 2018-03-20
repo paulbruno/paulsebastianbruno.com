@@ -2,14 +2,16 @@
   <ul id="main-nav"<%- site.section ? ' class="active"' : '' %>>
     <li<%- site.section === 'summary' ? ' class="active"' : '' %>><a href="/summary">Summary</a></li>
     <li<%- site.section === 'currently' ? ' class="active"' : '' %>><a href="/currently">Currently</a></li>
-    <li<%- site.section === 'history' ? ' class="active"' : '' %>><a href="/history">History</a></li>
+    <li<%- site.section === 'previously' ? ' class="active"' : '' %>><a href="/previously">Previously</a></li>
+    <li<%- site.section === 'biography' ? ' class="active"' : '' %>><a href="/biography">Biography</a></li>
     <li<%- site.section === 'repos' ? ' class="active"' : '' %>><a href="/repos">Repos</a></li>
     <li<%- site.section === 'portfolio' ? ' class="active"' : '' %>><a href="/portfolio">Portfolio</a></li>
+    <li<%- site.section === 'frontier' ? ' class="active"' : '' %>><a href="/frontier">Frontier</a></li>
     <li<%- site.section === 'blog' ? ' class="active"' : '' %>><a href="/blog">Blog</a></li>
     <li<%- site.section === 'recently' ? ' class="active"' : '' %>><a href="/recently">Recently</a></li>
   </ul>
 
-  <% if (site.section) { %>
+  <% if (site.section && site.subnav) { %>
     <%- include('/partials/subnav/' + site.section + '.ejs'); %>
   <% } %>
 </nav>

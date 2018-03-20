@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% site.section = 'previously';
+     site.page = '';
+     site.subnav = false; %>
+  <% include /partials/header.ejs %>
+</head>
+
+<%# TODOS:
+* Fix FOIT in desktop Safari (still discernably happens there, though does not in Chrome, Firefox, et. al.; might also happen with iOS Safari, but it is hard to tell)
+* 
+%>
+<body>
+
+  <% include /partials/masthead.ejs %>
+
+  <% include /partials/nav.ejs %>
+
+  <main>
+    <ul>
+      <li>Full-Stack Engineer, Nexstar (2010-2011)</li>
+      <li>Full-Stack Engineer, Church Media (2009-2010)</li>
+      <li>Full-Stack Engineer, Credit Solutions (2008)</li>
+      <li>Full-Stack Engineer, freelance-only (developing content management systems for ministries and non-profits; 2005-2007)</li>
+      <li>Full-Stack Engineering Intern, Arkeo (Summer 2004)</li>
+      <li>Full-Stack Engineer, Bristol-Myers Squibb (2000-2001)</li>
+    </ul>
+  </main>
+
+  <% include /partials/footer.ejs %>
+
+</body>
+</html>
