@@ -54,7 +54,7 @@ nav ul {
   /* dimensions, padding/margin-ing */
   margin: 15px 0;
   padding: 15px 0;
-  display: inline-block;
+  display: inline-flex;
   /* text-styling */
   list-style: none;
   font-size: 1.9rem;
@@ -64,10 +64,11 @@ nav ul {
 
 nav ul::before {
   content: "/";
+  order: -100;
 }
 
 nav ul li {
-  display: inline-block;
+  margin: 0 .125em;
 }
 
 nav ul li * { /* for background */
@@ -78,6 +79,10 @@ nav ul li * { /* for background */
 nav ul li *:hover {
   color: #1c1c1c;
   cursor: pointer;
+}
+
+nav ul li.active {
+  order: -1;
 }
 
 nav ul li.active * {
@@ -91,6 +96,10 @@ nav ul.active > :not(.active) {
 
 nav ul.active:hover > :not(.active) {
   display: inline-block;
+}
+
+nav #main-nav:hover ~ .subnav {
+  display: none;
 }
 
 nav#section {
