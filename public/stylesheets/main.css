@@ -50,6 +50,11 @@ header h1 .tld {
   color: white;
 }
 
+nav {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 nav ul {
   /* dimensions, padding/margin-ing */
   margin: 15px 0;
