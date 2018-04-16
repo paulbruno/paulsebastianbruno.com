@@ -9,7 +9,7 @@
     <li<%- site.section === 'friends' ? ' class="active"' : '' %>><a href="/friends">Friends</a></li>
   </ul>
 
-  <% if (site.section) { %>
+  <% if (site.section && site.subnav) { %>
     <%- include('/partials/subnav/' + site.section + '.ejs'); %>
   <% } %>
 </nav>
