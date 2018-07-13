@@ -181,12 +181,12 @@ main {
   max-width: 39em;
   line-height: 1.75em;
   margin-top: 2em;
-  padding-left: 8rem;
+  padding-left: 1rem;
   padding-bottom: .25em;
   font-size: 1.35rem;
 }
 
 main span {
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted rgba(255, 255, 255, .3);
   padding-bottom: .3em;
 }
